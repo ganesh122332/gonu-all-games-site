@@ -1,4 +1,5 @@
 * {
+    user-select: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,9 +15,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #2ebd59;
-    color: #fff;
+    background: #f6f6f6;
+    color: #070707;
     padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #d0d0d0b2;
 }
 
 .logo {
@@ -28,11 +35,13 @@ header {
     width: 40px;
     height: 40px;
     margin-right: 10px;
+    border-radius: 50%;
 }
 
 .menu-toggle {
     font-size: 24px;
     cursor: pointer;
+    color: #05bc45;
 }
 
 #sidePanel {
@@ -41,8 +50,8 @@ header {
     right: -250px;
     width: 250px;
     height: 100%;
-    background: #2ebd59;
-    color: #fff;
+    background: #77e598;
+    color: #000000;
     transition: 0.3s;
     z-index: 1000;
 }
@@ -50,12 +59,13 @@ header {
 #sidePanel ul {
     list-style: none;
     padding: 20px;
+    color: #000;
 }
 
 #sidePanel ul li a {
     display: block;
     padding: 10px;
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -69,19 +79,23 @@ main {
 }
 
 .app-icon {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 170px;
     margin-bottom: 15px;
+    border-radius: 40px;
 }
 
 h2 {
-    font-size: 28px;
-    color: #2ebd59;
+    font-size: 32px;
+    color: #01a40c;
+    margin-top: -10px;
+    margin-bottom: 4px;
 }
 
 p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: #259145;
 }
 
 .download-btn,
@@ -90,15 +104,25 @@ p {
     margin: 10px;
     padding: 12px 20px;
     color: #fff;
-    background: #2ebd59;
+    background: #05a510;
     border-radius: 5px;
     text-decoration: none;
     transition: 0.3s;
+    min-width: fit-content;
+    width: 35%;
 }
 
-.download-btn:hover,
+.promo-btn {
+    margin-top: 2px;
+    background: #6cc5e9;
+    width: 50%;
+}
+.download-btn:hover{
+    background: #187137;
+}
+
 .promo-btn:hover {
-    background: #1e8c44;
+    background: #1e6c83;
 }
 
 table {
@@ -112,11 +136,14 @@ table {
 
 table th,
 table td {
-    border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
+    padding-right: 3px;
+    border-bottom: #eeeeee solid 2px;
 }
 
+table td{
+}
 table th {
     background: #2ebd59;
     color: #fff;
@@ -136,4 +163,14 @@ footer {
     font-size: 24px;
     cursor: pointer;
     margin-bottom: 0;
+}
+
+.clrfl{
+    background-color: #348caf3a;
+}
+.clrfl2{
+    background-color: #0000000f;
+}
+.footertext{
+    color: #2d2d2db5;
 }
