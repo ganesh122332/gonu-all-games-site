@@ -41,7 +41,7 @@ header {
 .menu-toggle {
     font-size: 24px;
     cursor: pointer;
-    color: #05bc45;
+    color: #069d3b;
 }
 
 #sidePanel {
@@ -109,13 +109,12 @@ p {
     text-decoration: none;
     transition: 0.3s;
     min-width: fit-content;
-    width: 35%;
+
 }
 
 .promo-btn {
     margin-top: 2px;
     background: #6cc5e9;
-    width: 50%;
 }
 .download-btn:hover{
     background: #187137;
